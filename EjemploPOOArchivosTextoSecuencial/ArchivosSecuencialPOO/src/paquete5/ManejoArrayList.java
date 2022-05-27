@@ -19,10 +19,12 @@ public class ManejoArrayList {
         
         // Arreglo
         Profesor [] profesores = new Profesor[2];
+      
         profesores[0] = prof1;
         profesores[1] = prof2;
         
         for (int i = 0; i < profesores.length; i++) {
+              //Profesor p = profesores[i]; tambien es una manera valida.
             System.out.printf("%s - %s\n", profesores[i].obtenerNombre(),
                     profesores[i].obtenerTipo());
         }
@@ -35,6 +37,7 @@ public class ManejoArrayList {
         profesores2.add(prof2);
         
         for (int i = 0; i < profesores2.size(); i++) {
+            //Profesor p = profesores2.get(i);
             System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
                     profesores2.get(i).obtenerTipo());
         }
